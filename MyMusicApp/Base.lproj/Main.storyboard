@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,12 +33,72 @@
                     </view>
                     <navigationItem key="navigationItem" id="y6V-iq-EiD"/>
                     <connections>
-                        <outlet property="musicTableView" destination="1SV-8I-8Oo" id="nUK-zK-rv8"/>
+                        <outlet property="musicTableView" destination="1SV-8I-8Oo" id="aI9-ed-0Mc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="dge-VP-9eh">
+            <objects>
+                <viewController storyboardIdentifier="SearchResultViewController" id="Noc-C8-uZ7" customClass="SearchResultViewController" customModule="MyMusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdi-re-ond">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="twM-5z-ieT">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="88u-o1-Pe6">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MusicCollectionViewCell" id="tqt-Dq-bvt" customClass="MusicCollectionViewCell" customModule="MyMusicApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DYt-qZ-eCT">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sLp-be-vsL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="sLp-be-vsL" firstAttribute="leading" secondItem="DYt-qZ-eCT" secondAttribute="leading" id="0rC-nH-Br4"/>
+                                                <constraint firstAttribute="trailing" secondItem="sLp-be-vsL" secondAttribute="trailing" id="HvF-HW-0D8"/>
+                                                <constraint firstItem="sLp-be-vsL" firstAttribute="top" secondItem="DYt-qZ-eCT" secondAttribute="top" id="Nom-Je-gAR"/>
+                                                <constraint firstAttribute="bottom" secondItem="sLp-be-vsL" secondAttribute="bottom" id="hHF-yD-4J2"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainImageView" destination="sLp-be-vsL" id="oPc-F6-L2l"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qQe-2T-XP2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qQe-2T-XP2" firstAttribute="bottom" secondItem="twM-5z-ieT" secondAttribute="bottom" id="4rH-Hk-rjt"/>
+                            <constraint firstItem="twM-5z-ieT" firstAttribute="top" secondItem="qQe-2T-XP2" secondAttribute="top" id="960-C6-eFC"/>
+                            <constraint firstItem="qQe-2T-XP2" firstAttribute="trailing" secondItem="twM-5z-ieT" secondAttribute="trailing" id="BUH-yP-5vb"/>
+                            <constraint firstItem="twM-5z-ieT" firstAttribute="leading" secondItem="qQe-2T-XP2" secondAttribute="leading" id="ujL-Ry-WXj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="twM-5z-ieT" id="Mcf-dV-AM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ayx-iC-XeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="2"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6mY-1D-1uK">

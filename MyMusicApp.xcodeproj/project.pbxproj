@@ -70,17 +70,13 @@
 		2C2789A72972C1F60028E029 /* MyMusicApp */ = {
 			isa = PBXGroup;
 			children = (
-				2C2789CA29752D2B0028E029 /* Networking */,
 				2C2789A82972C1F60028E029 /* AppDelegate.swift */,
 				2C2789AA2972C1F60028E029 /* SceneDelegate.swift */,
-				2C2789AC2972C1F60028E029 /* ViewController.swift */,
-				2C2789C02973E5C70028E029 /* MusicCell.swift */,
-				2C2789C12973E5C70028E029 /* MusicCell.xib */,
-				2C2789AE2972C1F60028E029 /* Main.storyboard */,
-				2C2789CD297543EC0028E029 /* MusicCollectionViewCell.swift */,
-				2C2789CB2975422C0028E029 /* SearchResultViewController.swift */,
-				2C2789C82973FE040028E029 /* Music.swift */,
-				2C2789C62973F6170028E029 /* Constants.swift */,
+				2C2789D2297697DD0028E029 /* Helper */,
+				2C2789CA29752D2B0028E029 /* Networking */,
+				2C2789D1297697D10028E029 /* Models */,
+				2C2789D0297697CE0028E029 /* Views */,
+				2C2789CF297697CC0028E029 /* Controllers */,
 				2C2789B12972C1F80028E029 /* Assets.xcassets */,
 				2C2789B32972C1F80028E029 /* LaunchScreen.storyboard */,
 				2C2789B62972C1F80028E029 /* Info.plist */,
@@ -94,6 +90,42 @@
 				2C2789C42973F0A80028E029 /* NetworkManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		2C2789CF297697CC0028E029 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C2789AC2972C1F60028E029 /* ViewController.swift */,
+				2C2789CB2975422C0028E029 /* SearchResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2C2789D0297697CE0028E029 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C2789AE2972C1F60028E029 /* Main.storyboard */,
+				2C2789C02973E5C70028E029 /* MusicCell.swift */,
+				2C2789C12973E5C70028E029 /* MusicCell.xib */,
+				2C2789CD297543EC0028E029 /* MusicCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C2789D1297697D10028E029 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C2789C82973FE040028E029 /* Music.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C2789D2297697DD0028E029 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2C2789C62973F6170028E029 /* Constants.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

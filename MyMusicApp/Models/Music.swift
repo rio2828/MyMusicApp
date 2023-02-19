@@ -16,13 +16,14 @@ struct MusicData: Codable {
     let results: [Music]
 }
 
-struct Music: Codable {
+final class Music: Codable {
     let songName: String?
     let artistName: String?
     let albumName: String?
     let previewUrl: String?
     let imageUrl: String?
     private let releaseDate: String?
+    var isSaved:Bool = false
     
     // 네트워크에서 주는 이름을 변환 (원시값 이용)
     // (서버: trackName -> 코드: songName)

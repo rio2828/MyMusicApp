@@ -18,8 +18,14 @@
 		2C2789C52973F0A80028E029 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2789C42973F0A80028E029 /* NetworkManager.swift */; };
 		2C2789C72973F6180028E029 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2789C62973F6170028E029 /* Constants.swift */; };
 		2C2789C92973FE040028E029 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2789C82973FE040028E029 /* Music.swift */; };
-		2C2789CC2975422C0028E029 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2789CB2975422C0028E029 /* SearchResultViewController.swift */; };
-		2C2789CE297543EC0028E029 /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2789CD297543EC0028E029 /* MusicCollectionViewCell.swift */; };
+		2C7809782987AC0B00AB5B44 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7809772987AC0B00AB5B44 /* CoreDataManager.swift */; };
+		2C78097B2987B93E00AB5B44 /* SavedMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7809792987B93E00AB5B44 /* SavedMusicCell.swift */; };
+		2C78097C2987B93E00AB5B44 /* SavedMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C78097A2987B93E00AB5B44 /* SavedMusicCell.xib */; };
+		2C78097F2989470900AB5B44 /* SavedListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C78097E2989470900AB5B44 /* SavedListViewController.swift */; };
+		2CB2DDB52983D05000B47EB4 /* MusicSavedData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2DDB32983D05000B47EB4 /* MusicSavedData.xcdatamodeld */; };
+		2CB2DDB82983D18500B47EB4 /* MusicSavedData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2DDB62983D18500B47EB4 /* MusicSavedData+CoreDataClass.swift */; };
+		2CB2DDB92983D18500B47EB4 /* MusicSavedData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2DDB72983D18500B47EB4 /* MusicSavedData+CoreDataProperties.swift */; };
+		2CB2DDBB2983E1DA00B47EB4 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2DDBA2983E1DA00B47EB4 /* MusicManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +42,14 @@
 		2C2789C42973F0A80028E029 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2C2789C62973F6170028E029 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2C2789C82973FE040028E029 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
-		2C2789CB2975422C0028E029 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
-		2C2789CD297543EC0028E029 /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C7809772987AC0B00AB5B44 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2C7809792987B93E00AB5B44 /* SavedMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMusicCell.swift; sourceTree = "<group>"; };
+		2C78097A2987B93E00AB5B44 /* SavedMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedMusicCell.xib; sourceTree = "<group>"; };
+		2C78097E2989470900AB5B44 /* SavedListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedListViewController.swift; sourceTree = "<group>"; };
+		2CB2DDB42983D05000B47EB4 /* MusicSavedData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicSavedData.xcdatamodel; sourceTree = "<group>"; };
+		2CB2DDB62983D18500B47EB4 /* MusicSavedData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicSavedData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2CB2DDB72983D18500B47EB4 /* MusicSavedData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MusicSavedData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2CB2DDBA2983E1DA00B47EB4 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 				2C2789D1297697D10028E029 /* Models */,
 				2C2789D0297697CE0028E029 /* Views */,
 				2C2789CF297697CC0028E029 /* Controllers */,
+				2CB2DDB32983D05000B47EB4 /* MusicSavedData.xcdatamodeld */,
 				2C2789B12972C1F80028E029 /* Assets.xcassets */,
 				2C2789B32972C1F80028E029 /* LaunchScreen.storyboard */,
 				2C2789B62972C1F80028E029 /* Info.plist */,
@@ -96,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2C2789AC2972C1F60028E029 /* ViewController.swift */,
-				2C2789CB2975422C0028E029 /* SearchResultViewController.swift */,
+				2C78097E2989470900AB5B44 /* SavedListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -105,9 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				2C2789AE2972C1F60028E029 /* Main.storyboard */,
+				2C7809792987B93E00AB5B44 /* SavedMusicCell.swift */,
+				2C78097A2987B93E00AB5B44 /* SavedMusicCell.xib */,
 				2C2789C02973E5C70028E029 /* MusicCell.swift */,
 				2C2789C12973E5C70028E029 /* MusicCell.xib */,
-				2C2789CD297543EC0028E029 /* MusicCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,7 +129,11 @@
 		2C2789D1297697D10028E029 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CB2DDB62983D18500B47EB4 /* MusicSavedData+CoreDataClass.swift */,
+				2CB2DDB72983D18500B47EB4 /* MusicSavedData+CoreDataProperties.swift */,
 				2C2789C82973FE040028E029 /* Music.swift */,
+				2CB2DDBA2983E1DA00B47EB4 /* MusicManager.swift */,
+				2C7809772987AC0B00AB5B44 /* CoreDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +206,7 @@
 			files = (
 				2C2789B52972C1F80028E029 /* LaunchScreen.storyboard in Resources */,
 				2C2789B22972C1F80028E029 /* Assets.xcassets in Resources */,
+				2C78097C2987B93E00AB5B44 /* SavedMusicCell.xib in Resources */,
 				2C2789B02972C1F60028E029 /* Main.storyboard in Resources */,
 				2C2789C32973E5C70028E029 /* MusicCell.xib in Resources */,
 			);
@@ -202,13 +221,18 @@
 			files = (
 				2C2789AD2972C1F60028E029 /* ViewController.swift in Sources */,
 				2C2789A92972C1F60028E029 /* AppDelegate.swift in Sources */,
+				2CB2DDB82983D18500B47EB4 /* MusicSavedData+CoreDataClass.swift in Sources */,
+				2C78097B2987B93E00AB5B44 /* SavedMusicCell.swift in Sources */,
+				2C78097F2989470900AB5B44 /* SavedListViewController.swift in Sources */,
 				2C2789C52973F0A80028E029 /* NetworkManager.swift in Sources */,
 				2C2789AB2972C1F60028E029 /* SceneDelegate.swift in Sources */,
-				2C2789CE297543EC0028E029 /* MusicCollectionViewCell.swift in Sources */,
+				2CB2DDBB2983E1DA00B47EB4 /* MusicManager.swift in Sources */,
 				2C2789C92973FE040028E029 /* Music.swift in Sources */,
 				2C2789C22973E5C70028E029 /* MusicCell.swift in Sources */,
-				2C2789CC2975422C0028E029 /* SearchResultViewController.swift in Sources */,
+				2CB2DDB52983D05000B47EB4 /* MusicSavedData.xcdatamodeld in Sources */,
 				2C2789C72973F6180028E029 /* Constants.swift in Sources */,
+				2C7809782987AC0B00AB5B44 /* CoreDataManager.swift in Sources */,
+				2CB2DDB92983D18500B47EB4 /* MusicSavedData+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +450,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2CB2DDB32983D05000B47EB4 /* MusicSavedData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2CB2DDB42983D05000B47EB4 /* MusicSavedData.xcdatamodel */,
+			);
+			currentVersion = 2CB2DDB42983D05000B47EB4 /* MusicSavedData.xcdatamodel */;
+			path = MusicSavedData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2C27899D2972C1F60028E029 /* Project object */;
 }

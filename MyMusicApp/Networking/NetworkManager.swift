@@ -15,10 +15,10 @@ enum NetworkError: Error {
 }
 
 //MARK: - Networking (서버와 통신) 클래스 모델
-final class NetworkingManager {
+final class NetworkManager {
     
     // 여러화면에서 통신한다면, 싱글톤으로 만듬
-    static let shared = NetworkingManager()
+    static let shared = NetworkManager()
     // 여러객체를 추가적으로 생성하지 못하도록 설정
     private init() {}
     
@@ -53,7 +53,7 @@ final class NetworkingManager {
                 return
             }
             
-            // 메서드 실행해서, 결과를 받음
+            // 데이터 분석하기
             if let musics = self.parseJSON(safeData) {
                 print("Parse 실행")
                 completion(.success(musics))
@@ -70,8 +70,8 @@ final class NetworkingManager {
         
         // 성공
         do {
-            // 구조체로 변환하는 메서드
-            // JSON 데이터 -> MusicData 구조체
+            // 구조체(클래스)로 변환하는 메서드
+            // JSON 데이터 -> MusicData 클래스
             let musicData = try JSONDecoder().decode(MusicData.self, from: musicData)
             return musicData.results
             
